@@ -8,7 +8,7 @@
 
 /**
  * Function divides numbers from a range and prints it.
- * @param divider double number represends divider
+ * @param divider double number represents divider
  */
 void divide(double divider);
 
