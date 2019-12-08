@@ -1,5 +1,6 @@
 #include <string.h>
 #include <ctype.h>
+#include "../headers/copydigits.h"
 
 void copy_digits(char *input, char *target)
 {
