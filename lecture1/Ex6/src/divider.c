@@ -1,11 +1,14 @@
 #include "../headers/divider.h"
 
-void divide(double divider)
+void divide(int divider)
 {
-    printf("Sequence of divided numbers:\n");
-    for(double num = LOWER_LIMIT; num <= UPPER_LIMIT; ++num)
+    printf("Sequence of numbers divided by %d:\n", divider);
+    for(int num = LOWER_LIMIT; num <= UPPER_LIMIT; ++num)
     {
-        printf("%lf ", (num / divider));
+        if (num % divider == 0)
+        {
+            printf("%d ", num);
+        }
     }
     printf("\n");
 }

@@ -3,22 +3,16 @@
 
 int main()
 {  
-    double n = 0;
+    int n = 0;
     printf("Range: from %u up to %u\n", LOWER_LIMIT, UPPER_LIMIT);
-    printf("Enter non zero and non negative number from the range: ");
+    printf("Enter non zero integer number: ");
 
-    while (1 == scanf("%lf", &n) && n > 0)
+    while (1 == scanf("%d", &n) && n > 0)
     {
-        if((n >= LOWER_LIMIT) && (n <= UPPER_LIMIT))
-        {
-            divide(n);
-        }
-        else
-        {
-            printf("Entered number out of range.");
-        }
-        printf("Enter non zero and non negative number from the range: ");
+        divide(n);
+        printf("\nEnter non zero integer number: ");
     }
+    printf("Entered invalid number.");
 
     return 0;
 }

@@ -7,9 +7,9 @@
 #define UPPER_LIMIT 500
 
 /**
- * Function divides numbers from a range and prints it.
- * @param divider double number represents divider
+ * Function prints all numbers between 1 to 500 which divided by provided a number.
+ * @param divider int number represents divider
  */
-void divide(double divider);
+void divide(int divider);
 
 #endif // DIVIDER_H
